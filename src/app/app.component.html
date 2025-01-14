@@ -1,18 +1,24 @@
 
 
 
-<div class="card">
 
-    <h1>Welcome to {{ data.tittle }}</h1>
-    
-    
-        <img width="250" (click)="LogoTouch()" src="https://opensource.google/static/images/projects/os-projects-angular.svg" alt="img">
-        <br>
+ <div class="top-menu">
 
-        <input type="text" (keyup)="KeyType(tittleInput.value)" [value]="data.tittle" #tittleInput>
-    
+    <img class="logo"
+         src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png">
+
 </div>
 
 
+
+<div class="courses">
+
+    
+<div class="card">
+
+
+    <!-- <course-card [course]="CoreCourse"></course-card> -->
+
+</div>
 
 <router-outlet>
