@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Course } from '../modal/course';
 
 @Component({
@@ -14,6 +14,14 @@ export class CourseCardComponent {
         required: true
     })
     course : Course | undefined;
+
+    @Output()
+    CardSelected = new EventEmitter<Course>();
+
     constructor(){}
 
+    onViewed() {
+        console.log(" Click on card btn. - Child CLICK");
+        this.CardSelected.emit(this.course);
+    }
 }
