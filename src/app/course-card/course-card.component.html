@@ -1,16 +1,16 @@
 <div class="course-card" >
+        
+        <h1 class="course-title">{{ course?.description }}</h1>
+        <!-- <h1 class="course-title">course-title</h1> -->
 
-    <div class="course-title">
-        <!-- {{ course.description }} -->
-    </div>
+        <!-- <img class="course-media" src="https://digital-speed.vercel.app/assets/card_02.png" alt="img"> -->
+        <img class="course-media" [src]="course?.iconUrl" alt="img">
 
-    <!-- <div class="course-title">
-        <img [src]="course.iconUrl" alt="img">
-    </div> -->
+    <!-- <p class="course-Description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, temporibus!
+    </p> -->
 
-    <!-- <div class="course-longDescription">
-        {{ course.longDescription }}
-    </div> -->
+    <p class="course-Description">{{ course?.longDescription }}</p>
 
 
 </div>

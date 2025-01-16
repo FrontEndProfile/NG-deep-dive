@@ -3,21 +3,18 @@
 
 
  <div class="top-menu">
-
-    <img class="logo"
-         src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png">
-
+    <div class="container">
+        <img class="logo"
+        src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png">
+    </div>
 </div>
 
 
-
-<div class="courses">
-
-    
-<div class="card">
-
-
-    <!-- <course-card [course]="CoreCourse"></course-card> -->
+<!-- <h1>{{ coreCourse.description }}</h1> -->
+<div class="container row">
+    <app-course-card [course]="coreCourse"></app-course-card>
+    <app-course-card [course]="templateCourse"></app-course-card>
+    <app-course-card [course]="ngrxCourse"></app-course-card>
 
 </div>
 

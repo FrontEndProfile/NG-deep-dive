@@ -17,6 +17,7 @@ input {
 .top-menu {
     background: #1976d2;
     padding: 2px 15px;
+    margin-bottom: 48px;
 }
 
 .logo {
@@ -24,7 +25,11 @@ input {
 }
 
 
-.courses {
-    max-width: 400px;
-    margin: 50px auto;
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
 }

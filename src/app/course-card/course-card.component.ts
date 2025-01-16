@@ -11,9 +11,9 @@ import { Course } from '../modal/course';
 export class CourseCardComponent {
 
     @Input({
-        required : true
+        required: true
     })
-    course: Course | undefined;
+    course : Course | undefined;
     constructor(){}
 
 }

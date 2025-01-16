@@ -1,0 +1,31 @@
+
+
+
+.course-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    max-width: 430px;
+    padding: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.course-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+
+.course-media {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.course-Description {
+    font-size: 1rem;
+    line-height: 1.3;
+    font-weight: 500;
+}
