@@ -1,21 +1,12 @@
-
-
-
-
- <div class="top-menu">
+<div class="top-menu">
     <div class="container">
-        <img class="logo"
-        src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png">
+        <img class="logo" src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png">
     </div>
 </div>
 
-
-<!-- <h1>{{ coreCourse.description }}</h1> -->
 <div class="container row">
-    <app-course-card (CardSelected)="onCardSelected($event)" [course]="coreCourse"></app-course-card>
-    <app-course-card (CardSelected)="onCardSelected($event)" [course]="templateCourse"></app-course-card>
-    <app-course-card (CardSelected)="onCardSelected($event)" [course]="ngrxCourse"></app-course-card>
+    @for(course of courses; track course.id) {
+        <app-course-card (CardSelected)="onCardSelected($event)" [course]="course"></app-course-card>
+    }
 
 </div>
-
-<router-outlet>

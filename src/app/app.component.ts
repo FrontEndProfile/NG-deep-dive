@@ -12,10 +12,7 @@ import { Course } from './modal/course';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-
-    coreCourse = COURSES[0]
-    templateCourse = COURSES[1]
-    ngrxCourse = COURSES[2]
+    courses = COURSES;
 
     onCardSelected(course : Course) {
         console.log(" App component click - Parent Click", course)
