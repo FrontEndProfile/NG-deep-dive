@@ -38,3 +38,13 @@
     font-weight: bold;
     cursor: pointer;
 }
+
+
+
+.is-first {
+    background: green;
+}
+
+.is-last {
+    background: rgb(0, 53, 128);
+}

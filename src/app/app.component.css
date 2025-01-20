@@ -33,3 +33,20 @@ input {
     flex-wrap: wrap;
     gap: 24px;
 }
+
+
+.is-first {
+    border: 2px solid green !important;
+}
+
+.is-last {
+    border: 2px solid blue !important;
+}
+
+.is-even {
+    border: 2px solid rgb(0, 255, 170);
+}
+
+.is-odd {
+    border: 2px solid rgb(255, 128, 0);
+}

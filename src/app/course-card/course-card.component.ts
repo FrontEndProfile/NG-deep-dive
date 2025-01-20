@@ -15,6 +15,12 @@ export class CourseCardComponent {
     })
     course : Course | undefined;
 
+
+    @Input({
+        required: true
+    })
+    index : number | undefined;
+
     @Output()
     CardSelected = new EventEmitter<Course>();
 
@@ -24,4 +30,6 @@ export class CourseCardComponent {
         console.log(" Click on card btn. - Child CLICK");
         this.CardSelected.emit(this.course);
     }
+
+    
 }
