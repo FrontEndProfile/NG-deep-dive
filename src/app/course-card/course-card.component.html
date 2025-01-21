@@ -1,10 +1,16 @@
 <div class="course-card" >
         
         <h1 class="course-title"> {{cardIndex + ' ' + course?.description }}</h1>
-        <!-- <h1 class="course-title">course-title</h1> -->
 
-        <!-- <img class="course-media" src="https://digital-speed.vercel.app/assets/card_02.png" alt="img"> -->
-        <img class="course-media" [src]="course?.iconUrl" alt="img">
+        @if (course?.id == 1) {
+            <h1>course with ID 1 detected</h1>
+        }
+        @else if (course?.iconUrl) {
+            <img class="course-media" [src]="course?.iconUrl" alt="img">
+        }
+        @else {
+            <h3>no image Available </h3>
+        }
 
     <!-- <p class="course-Description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, temporibus!
