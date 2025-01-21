@@ -16,10 +16,8 @@ export class CourseCardComponent {
     course : Course | undefined;
 
 
-    @Input({
-        required: true
-    })
-    index : number | undefined;
+    @Input()
+    cardIndex : number | undefined;
 
     @Output()
     CardSelected = new EventEmitter<Course>();
@@ -31,5 +29,5 @@ export class CourseCardComponent {
         this.CardSelected.emit(this.course);
     }
 
-    
+
 }

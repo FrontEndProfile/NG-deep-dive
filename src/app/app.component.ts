@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { CourseCardComponent } from './course-card/course-card.component';
 import { COURSES } from '../db-data';
 import { Course } from './modal/course';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CourseCardComponent],
+  imports: [RouterOutlet, CommonModule, CourseCardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
