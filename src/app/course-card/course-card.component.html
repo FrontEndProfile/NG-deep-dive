@@ -2,19 +2,15 @@
         
         <h1 class="course-title"> {{cardIndex + ' ' + course?.description }}</h1>
 
-        @if (course?.id == 1) {
-            <h1>course with ID 1 detected</h1>
-        }
-        @else if (course?.iconUrl) {
-            <img class="course-media" [src]="course?.iconUrl" alt="img">
-        }
-        @else {
-            <h3>no image Available </h3>
-        }
+        <img class="course-media"
+            *ngIf="course?.iconUrl; else noImage"
+         [src]="course?.iconUrl" alt="img">
 
-    <!-- <p class="course-Description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, temporibus!
-    </p> -->
+         <ng-template #noImage>
+            <p style="background: lightgray;padding: 96px 12px;margin-bottom: 8px;">No image is available</p>
+         </ng-template>
+
+
 
     <p class="course-Description">{{ course?.longDescription }}</p>
 

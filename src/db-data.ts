@@ -1,7 +1,7 @@
 
 
 export const COURSES: any = [
-
+undefined,
     {
         id: 1,
         description: "Angular Core Deep Dive",
@@ -38,7 +38,7 @@ export const COURSES: any = [
         id: 5,
         description: 'Angular Security Course',
         longDescription: "Learn Web Security Fundamentals and apply them to defend an Angular / Node Application from multiple types of attacks.",
-        iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/security-cover-small-v2.png',
+        // iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/security-cover-small-v2.png',
         category: 'ADVANCED',
         lessonsCount: 11
     },
