@@ -10,7 +10,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './course-card.component.css'
 })
 export class CourseCardComponent {
-
     @Input({
         required: true
     })
@@ -27,6 +26,13 @@ export class CourseCardComponent {
 
     isImageVisible() {
        return this.course && this.course.iconUrl;
+    }
+
+    cardClasses(){
+        if(this.course?.category == 'BEGINNER') {
+            return ['beginner'];
+        }
+        return [];
     }
     onViewed() {
         console.log(" Click on card btn. - Child CLICK");

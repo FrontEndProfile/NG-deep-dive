@@ -1,4 +1,5 @@
-<div class="course-card" *ngIf="course">
+<div class="course-card" *ngIf="course" 
+[ngClass]="cardClasses()">
         
         <h1 class="course-title"> {{cardIndex + ' ' + course.description }}</h1>
 
