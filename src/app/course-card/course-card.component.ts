@@ -25,6 +25,9 @@ export class CourseCardComponent {
 
     constructor(){}
 
+    isImageVisible() {
+       return this.course && this.course.iconUrl;
+    }
     onViewed() {
         console.log(" Click on card btn. - Child CLICK");
         this.CardSelected.emit(this.course);
