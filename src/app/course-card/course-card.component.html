@@ -1,10 +1,10 @@
 <div class="course-card" *ngIf="course" 
-  [ngStyle]="{'color': 'blue', 'background-color': 'lightgray', 'border': '1px solid green'}">
+  [ngStyle]="configStyle()">
         <h1 class="course-title"> {{cardIndex + ' ' + course.description }}</h1>
 
-        <img class="course-media"
+        <!-- <img class="course-media"
             *ngIf="isImageVisible(); else noImage"
-         [src]="course.iconUrl" alt="img">
+         [src]="course.iconUrl" alt="img"> -->
 
          <ng-template #noImage>
             <p style="background: lightgray;padding: 96px 12px;margin-bottom: 8px;">No image is available</p>
