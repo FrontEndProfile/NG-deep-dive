@@ -28,16 +28,6 @@ export class CourseCardComponent {
        return this.course && this.course.iconUrl;
     }
 
-    configStyle(){
-        return {
-            'color': 'white', 
-            'background-image': 'url(' + this.course?.iconUrl + ')',
-            'background-repeat': 'no-repeat',
-            'border': '1px solid green',
-            'background-size': 'cover',
-            'height': '270px'
-        };
-    }
     onViewed() {
         console.log(" Click on card btn. - Child CLICK");
         this.CardSelected.emit(this.course);

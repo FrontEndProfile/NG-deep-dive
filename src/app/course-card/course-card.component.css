@@ -45,6 +45,17 @@
 }
 
 
+.course-category {
+    margin-block: 10px 15px;
+}
+
+.course-category .category {
+    border: 1px solid green;
+    background: rgb(170, 255, 170);
+    border-radius: 4px;
+    padding: 3px 12px;
+    display: inline;
+}
 
 .is-first {
     background: green;
@@ -53,3 +64,5 @@
 .is-last {
     background: rgb(0, 53, 128);
 }
+
+
