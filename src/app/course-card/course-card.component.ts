@@ -29,10 +29,10 @@ export class CourseCardComponent {
     }
 
     cardClasses(){
-        if(this.course?.category == 'BEGINNER') {
-            return ['beginner'];
-        }
-        return [];
+        // if(this.course?.category == 'BEGINNER') {
+        //     return ['beginner'];
+        // }
+        return {};
     }
     onViewed() {
         console.log(" Click on card btn. - Child CLICK");
