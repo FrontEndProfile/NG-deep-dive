@@ -1,6 +1,6 @@
 <ng-container *ngIf="course">
     <div class="course-card">
-        <h1 class="course-title"> {{cardIndex + ' ' + course.description }}</h1>
+        <h1 class="course-title"> {{cardIndex || ' ' + course.description }}</h1>
 
         <ng-container *ngIf="isImageVisible(); else noImage">
             <img class="course-media" 

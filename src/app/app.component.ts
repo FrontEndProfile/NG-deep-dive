@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CourseCardComponent } from './course-card/course-card.component';
 import { COURSES } from '../db-data';
@@ -15,7 +15,12 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
     courses = COURSES;
 
+
+    @ViewChild(CourseCardComponent)
+    card?: CourseCardComponent
+
     onCardSelected(course : Course) {
-        console.log(" App component click - Parent Click", course)
+        // console.log(" App component click - Parent Click", course)
+        console.log(this.card)
     }
 }
