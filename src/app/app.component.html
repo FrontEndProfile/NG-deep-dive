@@ -8,11 +8,13 @@
     
 
         <app-course-card
+        #card1
         (CardSelected)="onCardSelected($event)"
         [course]="courses[0]"
          ></app-course-card>
 
-         <app-course-card #card1
+         <app-course-card 
+         #card2
          (CardSelected)="onCardSelected($event)"
          [course]="courses[1]"
           ></app-course-card>

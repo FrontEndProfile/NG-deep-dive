@@ -16,11 +16,16 @@ export class AppComponent {
     courses = COURSES;
 
 
-    @ViewChild(CourseCardComponent)
-    card?: CourseCardComponent
+    @ViewChild('card1')
+    card1?: CourseCardComponent
+
+    @ViewChild('card2')
+    card2?: CourseCardComponent
+
 
     onCardSelected(course : Course) {
         // console.log(" App component click - Parent Click", course)
-        console.log(this.card)
+        console.log("Card 1 : ",this.card1)
+        console.log("Card 2 : ",this.card2)
     }
 }
