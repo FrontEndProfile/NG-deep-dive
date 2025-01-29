@@ -14,24 +14,28 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent {
     courses = COURSES;
+    @ViewChild('title')
+    titleElement!: ElementRef;
+
+    constructor(){
+    }
 
 
-    @ViewChild('card1', {read: ElementRef})
-    card1?: CourseCardComponent
 
-    @ViewChild('card2', {read: ElementRef})
-    card2?: CourseCardComponent
-
-    @ViewChild('container')
-    CardContainer?: ElementRef;
-
+    ngAfterViewInit(): void {
+        debugger
+        console.log('AfterViewInit executed');
+        console.log('AfterViewInit executed');
+        this.titleElement.nativeElement.style.color = 'red';
+        this.titleElement.nativeElement.textContent = 'Title Updated After View Initialized';
+      }
 
     onCardSelected(course : Course) {
         // console.log(" App component click - Parent Click", course)
-        console.log("Card 1 : ",this.card1)
-        console.log("Card 2 : ",this.card2)
+        // console.log("Card 1 : ",this.card1)
+        // console.log("Card 2 : ",this.card2)
 
-        console.log("Card Container Elem: ",this.CardContainer)
+        // console.log("Card Container Elem: ",this.CardContainer)
 
     }
 }
